@@ -1,187 +1,410 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>P Pribahan</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <script
-      src="https://kit.fontawesome.com/99bcf6575b.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      .font-raleway {
-        font-family: "Raleway", sans-serif;
-      }
-      .font-inter {
-        font-family: "Inter", sans-serif;
-      }
-    </style>
-  </head>
-  <body class="font-raleway">
-    <header class="my-8">
-      <div class="container mx-auto lg:px-24 px-8">
-        <div class="navbar bg-base-100">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-              >
-                <li><a>Item 1</a></li>
-                <li>
-                  <a>Parent</a>
-                  <ul class="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                  </ul>
-                </li>
-                <li><a>Item 3</a></li>
-              </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>P Pribahan</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script src="https://kit.fontawesome.com/99bcf6575b.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <style>
+    .font-raleway {
+      font-family: "Raleway", sans-serif;
+    }
+
+    .font-inter {
+      font-family: "Inter", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="font-raleway">
+  <header class="my-8">
+    <div class="container mx-auto lg:px-24 px-8">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
-            <a
-              class="btn btn-ghost text-xl text-[#030712] text-4xl font-extrabold"
-              >P-Ticket</a
-            >
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul
-              class="menu menu-horizontal px-1 space-x-14 text-lg text-[#030712B3] font-medium"
-            >
-              <a href="#">Home</a>
-              <a href="#">About</a>
-              <a href="#">Destination</a>
-              <a href="#">Search</a>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
             </ul>
           </div>
-          <div class="navbar-end">
-            <a class="btn font-bold text-xl text-[#1DD100] bg-[#1DD1001A]"
-              >Bus <i class="fa-solid text-xl fa-bus-simple"></i
-            ></a>
+          <a class="btn btn-ghost text-xl text-[#030712] text-4xl font-extrabold">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 space-x-14 text-lg text-[#030712B3] font-medium">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Destination</a>
+            <a href="#">Search</a>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn font-bold text-xl text-[#1DD100] bg-[#1DD1001A]">Bus <i
+              class="fa-solid text-xl fa-bus-simple"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Banner section start -->
+    <section class="my-8">
+      <div class="container mx-auto lg:px-24 px-8">
+        <div
+          class="h-[70vh] bg-[url('images/banner.png')] bg-cover bg-center bg-no-repeat rounded-3xl flex justify-center items-center">
+          <div class="space-y-5">
+            <h1 class="text-center lg:text-6xl text-3xl text-white font-extrabold">
+              End-to-End Travel with <br />
+              <span class="text-[#1DD100]">P-Paribahan</span>
+            </h1>
+            <p class="text-white w-3/4 text-center mx-auto">
+              We have an excellent system of taking service based on
+              preference, as there is ticketing service for multiple routes
+              via different categories of buses.
+            </p>
+            <button class="font-bold block mx-auto px-8 py-6 bg-[#1DD100] rounded-xl text-xl">
+              Buy Tickets
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:flex md:flex-row flex-col justify-around lg:-translate-y-16 md:-translate-y-16 -translate-y-0">
+          <div class="px-8 py-10 bg-[#FFFFFF] flex gap-4 rounded-3xl border-2 border-b-[#1DD100]">
+            <img src="images/people.png" alt="" />
+            <div>
+              <h1 class="font-inter font-bold text-[#030712] lg:text-4xl text-3xl">
+                500k+
+              </h1>
+              <p class="font-normal text-lg text-[#03071299] font-inter">
+                Registered Users
+              </p>
+            </div>
+          </div>
+          <div class="px-8 py-10 bg-[#FFFFFF] flex gap-4 rounded-3xl border-2 border-b-[#1DD100]">
+            <img src="images/people.png" alt="" />
+            <div>
+              <h1 class="font-inter font-bold text-[#030712] lg:text-4xl text-3xl">
+                1.7lacks
+              </h1>
+              <p class="font-normal text-lg text-[#03071299] font-inter">
+                Tickets sold
+              </p>
+            </div>
+          </div>
+          <div class="px-8 py-10 bg-[#FFFFFF] flex gap-4 rounded-3xl border-2 border-b-[#1DD100]">
+            <img src="images/people.png" alt="" />
+            <div>
+              <h1 class="font-inter font-bold text-[#030712] lg:text-4xl text-3xl">
+                80k+
+              </h1>
+              <p class="font-normal text-lg text-[#03071299] font-inter">
+                Rental partners
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- Main section -->
+  <main>
+    <!-- Best offers -->
+    <section class="my-8">
+      <div class="container mx-auto lg:px-24 lg:px-8">
+        <h3 class="text-4xl text-center font-bold text-[#030712]">
+          Best offers for you
+        </h3>
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 my-12">
+          <div class="flex bg-[#FFBF0F] rounded-3xl">
+            <div class="flex justify-center items-center p-12">
+              <div class="">
+                <h2 class="lg:text-4xl text-3xl text-[#030712CC] font-black font-inter">
+                  15% OFF
+                </h2>
+                <p class="text-xl text-[#030712CC] font-inter font-medium">
+                  on your next purchase
+                </p>
+                <p class="text-xl text-[#03071280] font-inter font-medium">
+                  use by January 2024
+                </p>
+              </div>
+            </div>
+            <img src="images/cupon-devider.png" alt="" />
+            <div class="p-12 flex justify-center items-center">
+              <div>
+                <h2 class="text-3xl font-bold">NEW15</h2>
+                <p class="text-xl font-medium text-[#03071266]">
+                  Coupon Code
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex bg-[#F78C9C] rounded-3xl">
+            <div class="flex justify-center items-center p-12">
+              <div class="">
+                <h2 class="lg:text-4xl text-3xl text-[#030712CC] font-black font-inter">
+                  15% OFF
+                </h2>
+                <p class="text-xl text-[#030712CC] font-inter font-medium">
+                  on your next purchase
+                </p>
+                <p class="text-xl text-[#03071280] font-inter font-medium">
+                  use by January 2024
+                </p>
+              </div>
+            </div>
+            <img src="images/cupon-devider.png" alt="" />
+            <div class="p-12 flex justify-center items-center">
+              <div>
+                <h2 class="text-3xl font-bold">couple 20</h2>
+                <p class="text-xl font-medium text-[#03071266]">
+                  Coupon Code
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="text-xl border border-[#1DD100] font-bold text-[#1DD100] bg-transperant px-6 py-5 rounded-xl mx-auto block">
+          See All Offers
+        </button>
+      </div>
+    </section>
+    <!-- Seat choice section start -->
+    <section class="mt-32 border-2 border-t-[#1DD100] border-b-none bg-[#F7F8F8] rounded-lg py-32">
+      <div class="container mx-auto lg:px-24 px-8">
+        <div class="space-y-6">
+          <h3 class="text-4xl text-center font-bold text-black">
+            P.H Paribahan
+          </h3>
+          <p class="text-[#03071299] w-2/3 text-center mx-auto">
+            We have an excellent system of taking service based on preference,
+            as there is ticketing service for multiple routes via different
+            categories of buses.
+          </p>
+        </div>
+        <div class="mt-12">
+          <div class="flex p-8 gap-8 rounded-xl bg-[#FFFFFF]">
+            <div class="">
+              <div class="flex justify-between">
+                <div class="flex space-x-4">
+                  <img src="images/bus-logo.png" alt="" />
+                  <div class="space-y-4">
+                    <h3 class="text-3xl">Greenline Paribahan</h3>
+                    <p class="text-lg font-inter text-[#03071299]">
+                      Coach-009-WEB ! AC_Business
+                    </p>
+                  </div>
+                </div>
+                <button class="text-lg bg-[#1DD10026] rounded-xl text-[#1DD100] px-6 py-5 font-medium flex">
+                  <img src="images/seat-green.png" alt="" /><span class="text-[#1DD100]">40</span><span> seat
+                    left</span>
+                </button>
+              </div>
+              <div class="bg-[#F7F8F8] p-8 mt-6 rounded-xl">
+                <div class="flex justify-between py-6 border-dashed border-2 border-b-[#03071233]">
+                  <p>Route</p>
+                  <p>Dhaka-sylhet</p>
+                </div>
+                <div class="flex justify-between py-6 border-dashed border-2 border-b-[#03071233]">
+                  <p>Departure Time</p>
+                  <p>9: 00 PM</p>
+                </div>
+                <div class="flex justify-around mt-6">
+                  <button class="bg-[#0307120D] px-6 py-5 rounded-xl">
+                    Boarding point - Chittagong
+                  </button>
+                  <button class="bg-[#0307120D] px-6 py-5 rounded-xl">
+                    Dropping point - Dhaka
+                  </button>
+                  <button class="bg-[#0307120D] px-6 py-5 rounded-xl">
+                    Est. Time 12hrs
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex">
+              <img src="images/info-devider.png" alt="" />
+            </div>
+            <div class="flex justify-center items-center">
+              <div>
+                <img src="images/fare.png" alt="" />
+                <div>
+                  <h2>550tk</h2>
+                  <p>per seat</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Banner section start -->
-      <section class="my-8">
-        <div class="container mx-auto lg:px-24 px-8 ">
-          <div
-            class="h-[70vh] bg-[url('images/banner.png')] bg-cover bg-center bg-no-repeat rounded-3xl flex justify-center items-center"
-          >
-            <div class="space-y-5">
-              <h1 class="text-center lg:text-6xl text-3xl text-white font-extrabold">End-to-End Travel with <br> <span class="text-[#1DD100]">P-Paribahan</span></h1>
-              <p class="text-white w-3/4 text-center mx-auto">
-                Yes, you can run unit tests and view the results directly within
-                the app. The integrated testing features allow for a streamlined
-                .
-              </p>
-              <button class="font-bold block mx-auto px-8 py-6 bg-[#1DD100] rounded-xl text-xl">Buy Tickets</button>
+      <section class="">
+        <div class="container mx-auto lg:px-24 bg-[#FFFFFF] rounded-xl  px-8">
+          <div class="m-8 p-8 grid lg:grid-cols-2 grid-cols-1">
+            <div class="p-8">
+              <h3 class="text-2xl font-semi-bold text-[#030712] font-semi-bold">select your seat</h3>
+              <div class="flex justify-between mt-12">
+                <div class="text-[#03071280] flex">
+                  <img src="images/seat-gray.png" alt="" />
+                  <h3 class="text-lg">Available</h3>
+                </div>
+                <div class="flex">
+                  <img src="images/seat-green.png" alt="" />
+                  <h3 class="text-lg">Selected</h3>
+                </div>
+              </div>
 
-            </div>
-          </div>
+              <div class="grid p-8">
 
-          <div class="lg:flex  md:flex-row flex-col  justify-around  lg:-translate-y-16 md:-translate-y-16 -translate-y-0">
-            <div class="px-8 py-10 bg-[#FFFFFF] flex gap-4 rounded-3xl border-2 border-b-[#1DD100]">
-                <img src="images/people.png" alt="">
-                <div>
-                    <h1 class="font-inter font-bold text-[#030712] lg:text-4xl text-3xl">500k+</h1>
-                    <p class="font-normal text-lg text-[#03071299] font-inter">Registered Users</p>
-                </div>
+
+                  <div class="grid lg:grid-cols-5 gap-8 justify-end">
+                    <button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">A</button>
+                    <button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      A1</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      A2</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      A3</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      A4</button>
+                    <button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium"> B</button>
+                    <button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+
+                      B1</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      B2</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      B3</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      B4</button>
+                    <button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium"> C</button>
+                    <button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      C1</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      C2</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      C3</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      C4</button>
+                    <button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium"> D</button>
+                    <button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      D1</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      D2</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      D3</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      D4</button> <button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      E</button>
+                    <button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      E1</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      E2</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      E3</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      E4</button>
+                    <button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium"> F</button>
+                    <button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      F1</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      F2</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      F3</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      F4</button>
+                    <button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium"> G</button>
+                    <button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      G1</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      G2</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      G3</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      G4</button>
+                    <button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium"> H</button>
+                    <button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      H1</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      H2</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      H3</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      H4</button>
+                    <button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium"> I</button>
+                    <button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      I1</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      I2</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      I3</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      I4</button>
+                    <button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium"> J</button>
+                    <button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      J1</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      J2</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      J3</button><button class="bg-[#F7F8F8] rounded-xl px-0 py-4 text-lg font-inter font-medium">
+                      J4
+                    </button>
+                  </div>
+
+              </div>
             </div>
-            <div class="px-8 py-10 bg-[#FFFFFF] flex gap-4 rounded-3xl border-2 border-b-[#1DD100]">
-                <img src="images/people.png" alt="">
-                <div>
-                    <h1 class="font-inter font-bold text-[#030712] lg:text-4xl text-3xl">1.7lacks</h1>
-                    <p class="font-normal text-lg text-[#03071299] font-inter">Tickets sold</p>
+
+            <!-- User Login section -->
+            <div class="p-8">
+              <h3 class="text-2xl font-semi-bold text-[#030712] font-semi-bold">select your seat</h3>
+              <div class="space-y-8 mt-12 bg-[#F7F8F8] p-8 rounded-lg ">
+                <div class="flex justify-around gap-24">
+                  <!-- Seat count  -->
+                  <h4 class="textbase font-inter text-black font-medium">Seat <span class="text-white bg-[#1DD100]"
+                      id="seat-count"> 0</span></h4>
+                  <h4 class="textbase font-inter text-black font-medium">Class</h4>
+                  <h4 class="textbase font-inter text-black font-medium">Price</h4>
                 </div>
-            </div>
-            <div class="px-8 py-10 bg-[#FFFFFF] flex gap-4 rounded-3xl border-2 border-b-[#1DD100]">
-                <img src="images/people.png" alt="">
-                <div>
-                    <h1 class="font-inter font-bold text-[#030712] lg:text-4xl text-3xl">80k+</h1>
-                    <p class="font-normal text-lg text-[#03071299] font-inter">Rental partners</p>
+                <!-- Seat selection section -->
+                <div class="space-y-4">
+                  <li class="flex justify-around gap-24 items-center">
+                    <p>C2</p>
+                    <p>Economy</p>
+                    <p>500</p>
+                  </li>
+                  <li class="flex justify-around gap-24 items-center border-b pb-4 border-[#03071233]">
+                    <p>C2</p>
+                    <p>Economy</p>
+                    <p>500</p>
+                  </li>
                 </div>
+                <!-- Total Price -->
+                 <div class="text-[#030712] text-base font-medium flex justify-between items-center">
+                  <h4  >Total Price</h4>
+                  <h4>BDT<span id> 0</span></h4>
+                 </div>
+                 <div class="py-5 w-full rounded-xl bg-white">
+                  <input type="text" class="border-none pl-4 outline-none input-bordered w-4/5" name="" id="" placeholder="Have any Copupon?">
+                  <button class="py-2.5 px-4 bg-[#1DD100] text-white rounded-lg">Apply</button>
+                 </div>
+                 <!-- Grand Total -->
+                 <div class="text-[#030712] text-base font-medium flex justify-between items-center">
+                  <h4  >Grand Total</h4>
+                  <h4>BDT<span id> 0</span></h4>
+                 </div>
+              </div>
+              <div class="flex flex-col space-y-5 w-full ">
+                <label class="mx-2" for="">Passenger Name*</label>
+                <input type="text" placeholder="Type here" class="input input-bordered mx-2" />
+
+                <label  class="mx-2" for="">Phone Number*</label>
+                <input type="text" placeholder="Type here" class="input input-bordered mx-2" />
+
+                <label  class="mx-2" for="">email ID*</label>
+                <input type="text" placeholder="Type here" class="input input-bordered mx-2" />
+                <button class="py-2.5 px-4 bg-[#1DD100] font-raleway text-xl text-white rounded-lg mx-2">Next</button>
             </div>
+            <div class="flex justify-between mt-6 text-base text-[#03071299]">
+              <a>Terms & condition</a>
+              <a>Cancellation policy</a>
+            </div>
+            
           </div>
-        </div>
       </section>
-    </header>
+    </section>
+  </main>
+</body>
 
-    <!-- Main section -->
-    <main>
-        <!-- Best offers -->
-        <section class="my-8">
-        <div class="container mx-auto lg:px-24 lg:px-8">
-            <h3 class="text-4xl text-center font-bold text-[#030712]">Best offers for you</h3>
-            <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 my-12">
-                <div class="flex bg-[#FFBF0F] rounded-3xl">
-                    <div class="flex justify-center items-center p-12">
-                        <div class="">
-                            <h2 class="lg:text-4xl text-3xl text-[#030712CC] font-black font-inter">15% OFF</h2>
-                        <p class="text-xl text-[#030712CC] font-inter font-medium">on your next purchase</p>
-                        <p class="text-xl text-[#03071280] font-inter font-medium"> use by January 2024</p>
-                        </div>
-                    </div>
-                    <img src="images/cupon-devider.png" alt="">
-                    <div class="p-12 flex justify-center items-center">
-                        <div>
-                            <h2 class="text-3xl font-bold">NEW15</h2>
-                        <p class="text-xl font-medium text-[#03071266]">Coupon Code</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex bg-[#F78C9C] rounded-3xl">
-                    <div class="flex justify-center items-center p-12">
-                        <div class="">
-                            <h2 class="lg:text-4xl text-3xl text-[#030712CC] font-black font-inter">15% OFF</h2>
-                        <p class="text-xl text-[#030712CC] font-inter font-medium">on your next purchase</p>
-                        <p class="text-xl text-[#03071280] font-inter font-medium"> use by January 2024</p>
-                        </div>
-                    </div>
-                    <img src="images/cupon-devider.png" alt="">
-                    <div class="p-12 flex justify-center items-center">
-                        <div>
-                            <h2 class="text-3xl font-bold">couple 20</h2>
-                        <p class="text-xl font-medium text-[#03071266]">Coupon Code</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <button class="text-xl border border-[#1DD100] font-bold text-[#1DD100] bg-transperant px-6 py-5 rounded-xl mx-auto block">See All Offers</button>
-        </div>
-        </section>
-
-    </main>
-
-
-  </body>
 </html>
