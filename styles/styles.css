@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.model-container{
+    
+}
+.model-div{
+    position: absolute;
+  float: left;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#selected-seat-name li{
+  display: flex;
+  gap: 400px;
+}
